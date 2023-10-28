@@ -38,4 +38,10 @@ npm run test:e2e
 
 # test coverage
 npm run test:cov
+
 ```
+## Docker commands
+
+docker build .\weather-api\ -t abhi/weather-api
+
+docker run -p 8080:3333 abhi/weather-api

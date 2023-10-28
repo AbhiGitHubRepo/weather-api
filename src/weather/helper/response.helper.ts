@@ -5,7 +5,6 @@ export class ResponseHelper {
   response : ResponseDTO = new ResponseDTO();
 
   messageMapper(data):ResponseDTO {
-
     if(data){
       this.response.code = "200";
       this.response.status = "OK";
@@ -16,8 +15,6 @@ export class ResponseHelper {
       this.response.status = "Internal Error";
       this.response.data = null;
     }
-
-
     return this.response;
   }
 }
